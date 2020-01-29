@@ -5,9 +5,9 @@
 def sum arr
   # YOUR CODE HERE
   if arr.length == 0 
-    then 0
+    return 0
   else
-    arr.inject(0) { |sum, elem| sum + elem }
+    return arr.inject(0) { |sum, elem| sum + elem }
   end
 end
 
