@@ -42,7 +42,7 @@ end
 
 def hello(name)
   # YOUR CODE HERE
-  "Hello, " + name.to_s
+  return "Hello, " + name.to_s
 end
 
 def starts_with_consonant? s
@@ -74,16 +74,16 @@ class BookInStock
 
   def initialize isbn, price
       if isbn.empty? 
-        then raise ArgumentError
+        return raise ArgumentError
       end
       @isbn = isbn
       if price <= 0
-        then raise ArgumentError 
+        return raise ArgumentError 
       end
       @price = price
   end
 
   def price_as_string
-    "$#{format("%.2f", @price)}"
+    return "$#{format("%.2f", @price)}"
   end
 end
